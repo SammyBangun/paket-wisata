@@ -1,0 +1,84 @@
+.jumbotron {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  margin: 0; /* Hilangkan margin */
+  padding: 0; /* Hilangkan padding */
+}
+
+.row.no-gutters {
+  margin-right: 0; /* Hilangkan margin kanan */
+  margin-left: 0;  /* Hilangkan margin kiri */
+}
+
+.row.no-gutters > [class*="col-"] {
+  padding-right: 0; /* Hilangkan padding kanan */
+  padding-left: 0;  /* Hilangkan padding kiri */
+}
+
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: start;
+  align-items:start;
+  flex-direction: column;
+  padding: 3rem;
+  text-shadow: 0.5px 0.5px #F7FaFc;
+}
+
+.jumbotron p {
+  font-size: 1.8rem;
+}
+
+aside {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.embed-responsive .embed-responsive-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#paket {
+  padding-top: 60px; 
+  margin-top: -60px; 
+}
+
+@media (max-width: 768px) {
+  aside {
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+
+  .card {
+    margin: 15px 0;
+  }
+}
